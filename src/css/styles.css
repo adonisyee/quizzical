@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #F5F7FB;
+    font-family: "Karla", sans-serif;
+    color: #293264;
+    overflow-x: hidden;
+}
+
+/*background images */
+.blob1 {
+    height: 400px;
+    width: 500px;
+    border-radius: 80px;
+    background: #FFFAD1;
+    transform: rotate(-120.49deg);
+    position: fixed;
+    left: 80%;
+    top: -35%;
+    z-index: -1;
+}
+
+.blob2 {
+    height: 400px;
+    width: 500px;
+    left: 184px;
+    top: 378px;
+    border-radius: 80px;
+    background: #DEEBF8;
+    transform: rotate(-100.49deg);
+    position: fixed;
+    left: -15%;
+    top: 80%;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*landing*/
+.landing-container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.landing-description {
+    margin-top: .8em;
+    font-family: "Inter", sans-serif;
+}
+
+.landing-button {
+    margin-top: 2em;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    color: #F5F7FB;
+    background-color: #4D5B9E;
+    border: none;
+    width: 193px;
+    height: 52px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/*questions*/
+.questions-form {
+    display: grid;
+}
+
+.question-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    border-bottom: 0.8px solid #DBDEF0;
+}
+
+.question-answers {
+    margin: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.questions-check_button {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    color: #F5F7FB;
+    background-color: #4D5B9E;
+    border: none;
+    width: 193px;
+    height: 52px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.answers-selection {
+    margin: 10px;
+}
+
+.answers-selection input[type="radio"] {
+    opacity: 0;
+    width: 0;
+}
+
+.answers-selection label {
+    border: 1px solid #4D5B9E;
+    border-radius: 8px;
+    background-color: #F5F7FB;
+    font-family: "Inter", sans-serif;
+    font-size: .9em;
+    color: #293264;
+    margin-right: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.answers-selection input[type="radio"]:checked + label {
+    background-color: #D6DBF5;
+    border: none;
+}
+
+.answers-selection input[type="radio"]:checked.showAnswers.incorrect + label {
+    background-color: #F8BCBC;
+    opacity: 0.5;
+}
+
+.answers-selection input[type="radio"].showAnswers.correct + label {
+    background-color: #94D7A2;
+    opacity: 1;
+}
+
+.answers-selection input[type="radio"].showAnswers + label {
+    opacity: 0.5;
+}
+
+.show-score {
+    margin: auto;
+    margin-top: 40px;
+}
